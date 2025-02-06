@@ -1,11 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body class="bg-gray-100 px-8 md:px-32">
+    <div class="container mx-auto my-5 py-4 bg-white shadow-lg rounded-lg">
+      <h1 class="text-4xl text-center font-bold">แบบทดสอบ</h1>
+      <div class="flex justify-center items-center my-5 grid-cols-3">
+        <h4>เวลา : <span id="time">10</span> นาที</h4>
+      </div>
+      <div
+        class="flex justify-center items-cente gap-5 my-5 grid grid-cols-1 px-8"
+      >
+        <div class="rounded-lg bg-teal-700 p-4 text-white">
+          <h3 class="text-2xl font-bold" id="question-text">คำถาม</h3>
+          <p class="text-lg">เลือกคำตอบที่ถูกต้อง</p>
+          <div class="bg-stone-200 p-4 rounded-lg my-5 text-black">
+            <div class="my-5">
+              <input type="radio" name="question" id="question1" value="1" />
+              <label for="question1">คำตอบที่ 1</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" name="question" id="question2" value="2" />
+              <label for="question2">คำตอบที่ 2</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" name="question" id="question3" value="3" />
+              <label for="question3">คำตอบที่ 3</label>
+            </div>
+            <div class="my-5">
+              <input type="radio" name="question" id="question4" value="4" />
+              <label for="question4">คำตอบที่ 4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
